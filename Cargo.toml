@@ -4,5 +4,8 @@ resolver = "3"
 members = [
     "lib-logger",
     "lib-config",
+    "lib-persistence",
+    "vapi-data",
+    "vapi-controller",
    
 ]

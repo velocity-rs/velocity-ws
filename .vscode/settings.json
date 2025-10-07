@@ -1,0 +1,103 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./lib-config/Cargo.toml",
+        "./lib-logger/Cargo.toml",
+        "./lib-persistence/Cargo.toml",
+        "./vapi-data/Cargo.toml",
+        "./vapi-controller/Cargo.toml",
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false,
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
+    "lldb.verboseLogging": true,
+    //."lldb.cargo": "/Users/harikm/.cargo/bin/cargo",
+    "lldb.launch.env": {
+        "RUST_BACKTRACE": "1"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true,
+    },
+    "editor.rulers": [100,140],
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "block",
+    "editor.fastScrollSensitivity": 10,
+    "editor.formatOnPaste": true,
+    "workbench.colorCustomizations": {
+        "editor.background":"#000000",
+        "editor.focusedStackFrameHighlightBackground":"#7abd7a4d",
+        "editorCursor.foreground":"#00ff00",
+        "editorCursor.background":"#ff0000"
+    },
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|($TAGS)!.*)",
+    "todo-tree.regex.regexCaseSensitive": true,
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "HACK",
+        "BUG",
+        "TEST",
+        "COMMENT"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "icon": "bug",
+            "iconColour": "#ff0000",
+            "background": "#ff0000",
+            "foreground": "#000000",
+            "gutterIcon": true,
+            "type": "text-and-comment",
+
+        },
+        "HACK": {
+            "icon": "tools",
+            "iconColour": "#00ffea",
+            "background": "#00ffea",
+            "foreground": "#000000",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "FIXME": {
+            "icon": "flame",
+            "iconColour": "#ffff00",
+            "background": "#ffff00",
+            "foreground": "#000000",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+
+        },
+        "TODO": {
+            "icon": "tasklist",
+            "iconColour": "#8800ff",
+            "background": "#8800ff",
+            "foreground": "#ffffff",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "TEST": {
+            "icon": "bookmark",
+            "iconColour": "#00ff00",
+            "background": "#00ff00",
+            "foreground": "#1404ca",
+            "gutterIcon": true,
+            "type": "text-and-comment",
+            "fontWeight": "900"
+        },
+        "COMMENT": {
+            "icon": "tag",
+            "iconColour": "#b7ff00",
+            "background": "#b7ff00",
+            "foreground": "#000000",
+            "gutterIcon": true,
+            "type": "text-and-comment",
+            "fontWeight": "900"
+        }
+    },
+    "dependi.rust.lockFileEnabled": false,
+}

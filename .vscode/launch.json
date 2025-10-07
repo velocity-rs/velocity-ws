@@ -1,0 +1,83 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug DATA",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=vapi-data",
+                    "--package=vapi-data"
+                ],
+                "filter": {
+                    "name": "vapi-data",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/vapi-data",
+            "envFile": "${workspaceFolder}/envs/data.env"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Registry",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=vapi-registry",
+                    "--package=vapi-registry"
+                ],
+                "filter": {
+                    "name": "vapi-registry",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/vapi-registry",
+            "envFile": "${workspaceFolder}/envs/registry.env"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Controller",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=vapi-controller",
+                    "--package=vapi-controller"
+                ],
+                "filter": {
+                    "name": "vapi-controller",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/vapi-controller",
+            //"envFile": "${workspaceFolder}/envs/controller.env"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug PG",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=playground",
+                    "--package=playground"
+                ],
+                "filter": {
+                    "name": "playground",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}/vapi-registry"
+        }
+    ]
+}
