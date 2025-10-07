@@ -2,7 +2,7 @@
 resolver = "3"
 
 members = [
-
+    "lib-logger",
     "lib-config",
    
 ]
