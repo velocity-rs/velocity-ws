@@ -1,0 +1,15 @@
+[submodule "lib-config"]
+	path = lib-config
+	url = https://github.com/velocity-rs/lib-config
+[submodule "lib-logger"]
+	path = lib-logger
+	url = https://github.com/velocity-rs/lib-logger
+[submodule "lib-persistence"]
+	path = lib-persistence
+	url = https://github.com/velocity-rs/lib-persistence
+[submodule "vapi-data"]
+	path = vapi-data
+	url = https://github.com/velocity-rs/vapi-data
+[submodule "vapi-controller"]
+	path = vapi-controller
+	url = https://github.com/velocity-rs/vapi-controller
