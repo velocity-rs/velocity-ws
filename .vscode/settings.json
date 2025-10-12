@@ -1,8 +1,5 @@
 {
     "rust-analyzer.linkedProjects": [
-        "./lib-config/Cargo.toml",
-        "./lib-logger/Cargo.toml",
-        "./lib-persistence/Cargo.toml",
         "./vapi-data/Cargo.toml",
         "./vapi-controller/Cargo.toml",
     ],
@@ -19,8 +16,9 @@
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true,
+        "editor.codeLens": true,
     },
-    "editor.rulers": [100,140],
+    "editor.rulers": [100, 120],
     "editor.wordWrap": "on",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "block",
